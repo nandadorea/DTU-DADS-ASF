@@ -128,8 +128,8 @@ LocalSPWB=c(0.0006,0.0002,0.0000015,0),# the categories represent distances of h
                                        # of wild boar
                  
                  newInfFunctions=c(     # Vector of functions used to make new infections (including parameters).
-                   "DIRinf3('LamAll',MovSwProb,'pMatAll','RiskDC',MovMatAll,restMovedSize=35,label=1)", 
-                   "DIRinf3('LambdaWeaners',MovWeProb,'pMatWea','RiskDC',MovMatWean,restMovedSize=10,label=1)", 
+                   "DIRinf3('All',MovSwProb,'pMatAll','RiskDC',MovMatAll,restMovedSize=35,label=1)", 
+                   "DIRinf3('Weaners',MovWeProb,'pMatWea','RiskDC',MovMatWean,restMovedSize=10,label=1)",  
                    "INDflex('LamAb',SwMovAbProb,'relDC','pMatMovAb','RiskAb',probMatrix=MovAb,Reduction=0.5,Abattoir=TRUE,label=2)",
                    "INDflex('LamMRC',MedRiskMovProb,'relIMC','pMatMRC','RiskMRC',Reduction=1,label=3)",
                    "INDflex('LamLRC',LowRiskMovProb,'relILC','pMatLRC','RiskLRC',Reduction=1,label=4)",
@@ -153,6 +153,7 @@ LocalSPWB=c(0.0006,0.0002,0.0000015,0),# the categories represent distances of h
                  infofile="DataDADSASFWB.csv",    # File with herd locations and type 
                  typesfile="typesfile.csv",  # Definitions of type parameters
                  runfile="",                 # File used for additional output
+
                 fileMovMatAll="MovMatAll.csv", # bla bla
                 fileMovMatWean="MovMatWean.csv",
                 fileMovAb="MovAb.csv",
@@ -161,6 +162,10 @@ LocalSPWB=c(0.0006,0.0002,0.0000015,0),# the categories represent distances of h
                 fileSwMovAbProb="SwMovAbProb.csv",
                 fileMedRiskMovProb="MedRiskMovProb.csv",
                 fileLowRiskMovProb="LowRiskMovProb.csv",
+
+                fileBatchAnimAll = "BatchAnimAll.csv",
+                fileBatchAnimWea = "BatchAnimWea.csv",
+
 
                 chroniclefile=FALSE,   # File name or FALSE to use runID.
 
