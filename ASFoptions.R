@@ -124,8 +124,8 @@ probList=list(   ## Default distributions
                    "DIRinf3('All',MovSwProb,'pMatAll','RiskDC',MovMatAll,restMovedSize=35,label=1)", 
                    "DIRinf3('Weaners',MovWeProb,'pMatWea','RiskDC',MovMatWean,restMovedSize=10,label=1)",  
                    "INDflex('LamAb',SwMovAbProb,'relDC','pMatMovAb','RiskAb',probMatrix=MovAb,Reduction=0.5,Abattoir=TRUE,label=2)",
-                   "INDflex('LamMRC',MedRiskMovProb,'relIMC','pMatMRC','RiskMRC',Reduction=NULL,label=3)",
-                   "INDflex('LamLRC',LowRiskMovProb,'relILC','pMatLRC','RiskLRC',Reduction=NULL,label=4)",
+                   "INDflex('LamMRC',MedRiskMovProb,'relIMC','pMatMRC','RiskMRC',Reduction=1,label=3)",
+                   "INDflex('LamLRC',LowRiskMovProb,'relILC','pMatLRC','RiskLRC',Reduction=1,label=4)",
                    "LASinf(localsize=2,label=5)"),
 
                  controlFunctions=c(    # Vector of functions used for movement controls, tracing and surveillance
