@@ -192,8 +192,8 @@ eval.parent(expression(toPlot2<- NULL))#just to test
   eval.parent(expression(
       Tinfs<-switch(Tstoch+1,
                  function(contactHerds,dProbInfection,Sus) {
-                   rbinom(length(contactHerds),1,dProbInfection)
-                 },
+                     rbinom(length(contactHerds),1,dProbInfection)
+                    },
                  function(contactHerds,dProbInfection,Sus) {
                    rbinom(length(contactHerds),aHerd$Sus[contactHerds],
                           1-(1-dProbInfection)^(1/Sus[contactHerds]))

@@ -159,8 +159,13 @@ list(
               ### Newest change 23/06/2015 (TH)     
                Prob <- MovMat[curHerdTyp,aHerd$herdType]
                Prob <- Prob * aHerd[[DCtoRiskDist]][,i]
+               #if(sum(Prob)==0)(browser())
+               if(sum(Prob)==0){
+                 contactHerds<-NULL
+               }else{
                contactHerds <- sample(aHerd$ID[aHerd$herdSize>MovedAnimals[i]],numDC[i],rep=T,prob=Prob[aHerd$herdSize>MovedAnimals[i]])
                contactHerds <- unique(contactHerds)
+               }
              
  
                if(length(contactHerds>0)){
