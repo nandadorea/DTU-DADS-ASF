@@ -18,8 +18,8 @@ ASFEngine <- function() {
       infHerdNumsLast <<- infHerdNums ## Vector of infectious IDs 
 
    ### Increase the Surveillance capacity 
-       if(gTime>=(gDaysUntilBaseline+7))  {CapSurvay <<- 100}
-       if(gTime>=(gDaysUntilBaseline+14)) {CapSurvay <<- 200}
+       if(gTime>=(gDaysUntilBaseline+7))  {CapSurvay <<- CapSurvey.week2}
+       if(gTime>=(gDaysUntilBaseline+14)) {CapSurvay <<- CapSurvey.week3}
       
 
       if(verbose) cat("Time:",gTime,"\n")

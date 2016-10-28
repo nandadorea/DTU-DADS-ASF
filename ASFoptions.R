@@ -56,6 +56,10 @@ ASFoptions<-function(...){
                  Capacity=c(4800),      # The culling capacity per day
                                         #   4800 swine
                  TracePeriod=30,        # Tracing will go back to the defined number of days; default 30 days   
+                 CapSurvey.week1=10,
+                 CapSurvey.week2=40,
+                 CapSurvey.week3=80,
+                 
                  #CapSurvay=c(450),     # Surveillance capacity; number of herds/day
                  
                  RepVisSurvZone=14,     # How often the visit within the surveillance zone be repeated

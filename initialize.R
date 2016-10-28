@@ -320,7 +320,7 @@ initializeASFvars <- function() {
 
   ## Capacity for surveillance. it is initiated here with 50 herds per day and further
   ## manipulated in the ASFEngine file.
-    CapSurvay <<- 50
+    CapSurvay <<- CapSurvey.week1
 
   ## Initialize waiting periods and transmission probabilities
   aHerd$taggedDur <<-rep(0,gMaxHerds)
