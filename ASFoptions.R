@@ -53,7 +53,7 @@ ASFoptions<-function(...){
                                         #  or indirect (F) contact
                  depopTeams=Inf,        # Number of locations that can be
                                         #  depoped at a time. not used anymore
-                 Capacity=c(4800),      # The culling capacity per day
+                 Capacity=c(3000),      # The culling capacity per day
                                         #   4800 swine
                  TracePeriod=30,        # Tracing will go back to the defined number of days; default 30 days   
                  CapSurvey.week1=10,
@@ -154,7 +154,7 @@ LocalSPWB=c(0.0006,0.0002,0.0000015,0),# the categories represent distances of h
                                   
                  ############################################################
                  ## Files
-                 infofile="DataDADSASFWB.csv",    # File with herd locations and type 
+                 infofile="DataDADSASF.csv",    # File with herd locations and type 
                  typesfile="typesfile.csv",  # Definitions of type parameters
                  runfile="",                 # File used for additional output
 
